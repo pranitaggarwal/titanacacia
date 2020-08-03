@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Titan Citizen Dropdown Search</title>
+	<link href="style.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/e6fc1e7cb7.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+	<meta charset="utf-8"/>
+</head>
+	<body>
+		<div class="navbar">
+			<div class="container">
+			  <a href="#title" id="title">Titan Acacia</a>
+			  <div class="burger">
+				<div class="line fline"></div>
+				<div class="line fline"></div>
+				<div class="line fline"></div>
+			  </div>
+			</div>
+			<div id="nav-links">
+			  <a href="#home" class="link" id="home">Home</a>
+			  <div class="dropdown">
+				<button class="dropbtn" id="dropbtn1">Presidential
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content" id="dropdown1">
+				  <a href="#">Donald Trump</a>
+				  <a href="#">Joe Biden</a>
+				  <a href="#">Clash</a>
+				</div>
+			  </div>
+			  <div class="dropdown">
+				<button class="dropbtn" id="dropbtn2">Senate
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				  <div class="dropdown-content" id="dropdown2">
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						North Carolina
+						<i class="fa fa-caret-right"></i>
+					  </button>
+					  <div class="dropdown-content-in">
+						<a href="#">Thom Tillis</a>
+						<a href="#">Cal Cunningham</a>
+					  </div>
+					</div>
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						
+						Michigan
+						<i class="fa fa-caret-right "></i>
+					  </button>
+					  <div class="dropdown-content-in"\>
+						<a href="#">Gary Peters</a>
+						<a href="#">John James</a>
+					  </div>
+					</div>
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						
+						Arizona
+						<i class="fa fa-caret-right"></i>
+					  </button>
+					  <div class="dropdown-content-in">
+						<a href="#">Martha McSally</a>
+						<a href="#">Mark Kelley</a>
+					  </div>
+					</div>
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						
+						Georgia
+						<i class="fa fa-caret-right"></i>
+					  </button>
+					  <div class="dropdown-content-in"\>
+						<a href="#">Kelly Loeffler</a>
+						<a href="#">Jon Ossoff</a>
+						<a href="#">David Perdue</a>
+					  </div>
+					</div>
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						
+						Iowa
+						<i class="fa fa-caret-right"></i>
+					  </button>
+					  <div class="dropdown-content-in"\>
+						<a href="#">Joni Ernst</a>
+						<a href="#">Theresa Greenfield</a>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  <div class="dropdown">
+				<button class="dropbtn" id="dropbtn3">Governor
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				  <div class="dropdown-content" id="dropdown3">
+					<div class="dropdown-in">
+					  <button class="dropbtn-in">
+						
+						North Carolina
+						<i class="fa fa-caret-right"></i>
+					  </button>
+					  <div class="dropdown-content-in" id="governor"\>
+						<a href="#">Roy Cooper</a>
+						<a href="#">Dan Forest</a>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  <a href="#register" class="link">Register</a>
+			  <a href="#contact" class="link">Contact Us</a>
+			</div>
+	    </div>
+		<select id="container">
+			<option data-state="Select" class="opt">Select State</option>
+			<option data-state="Alabama" class="opt">Alabama</option>
+			<option data-state="Alaska" class="opt">Alaska</option>
+			<option data-state="Arizona" class="opt">Arizona</option>
+			<option data-state="Arkansas" class="opt">Arkansas</option>
+			<option data-state="California" class="opt">California</option>
+			<option data-state="Colorado" class="opt">Colorado</option>
+			<option data-state="Connecticut" class="opt">Connecticut</option>
+			<option data-state="Delaware" class="opt">Delaware</option>
+			<option data-state="Florida" class="opt">Florida</option>
+			<option data-state="Georgia" class="opt">Georgia</option>
+			<option data-state="Hawaii" class="opt">Hawaii</option>
+			<option data-state="Idaho" class="opt">Idaho</option>
+			<option data-state="Illinois" class="opt">Illinois</option>
+			<option data-state="Indiana" class="opt">Indiana</option>
+			<option data-state="Iowa" class="opt">Iowa</option>
+			<option data-state="Kansas" class="opt">Kansas</option>
+			<option data-state="Kentucky" class="opt">Kentucky</option>
+			<option data-state="Louisiana" class="opt">Louisiana</option>
+			<option data-state="Maine" class="opt">Maine</option>
+			<option data-state="Maryland" class="opt">Maryland</option>
+			<option data-state="Massachusetts" class="opt">Massachusetts</option>
+			<option data-state="Michigan" class="opt">Michigan</option>
+			<option data-state="Minnesota" class="opt">Minnesota</option>
+			<option data-state="Mississippi" class="opt">Mississippi</option>
+			<option data-state="Missouri" class="opt">Missouri</option>
+			<option data-state="Montana" class="opt">Montana</option>
+			<option data-state="Nebraska" class="opt">Nebraska</option>
+			<option data-state="Nevada" class="opt">Nevada</option>
+			<option data-state="New Hampshire" class="opt">New Hampshire</option>
+			<option data-state="New Jersey" class="opt">New Jersey</option>
+			<option data-state="New Mexico" class="opt">New Mexico</option>
+			<option data-state="New York" class="opt">New York</option>
+			<option data-state="North Carolina" class="opt">North Carolina</option>
+			<option data-state="North Dakota" class="opt">North Dakota</option>
+			<option data-state="Ohio" class="opt">Ohio</option>
+			<option data-state="Oklahoma" class="opt">Oklahoma</option>
+			<option data-state="Oregon" class="opt">Oregon</option>
+			<option data-state="Pennsylvania" class="opt">Pennsylvania</option>
+			<option data-state="Rhode Island" class="opt">Rhode Island</option>
+			<option data-state="South Carolina" class="opt">South Carolina</option>
+			<option data-state="South Dakota" class="opt">South Dakota</option>
+			<option data-state="Tennessee" class="opt">Tennessee</option>
+			<option data-state="Texas" class="opt">Texas</option>
+			<option data-state="Utah" class="opt">Utah</option>
+			<option data-state="Vermont" class="opt">Vermont</option>
+			<option data-state="Virginia" class="opt">Virginia</option>
+			<option data-state="Washington" class="opt">Washington</option>
+			<option data-state="West Virginia" class="opt">West Virginia</option>
+			<option data-state="Wisconsin" class="opt">Wisconsin</option>
+			<option data-state="Wyoming" class="opt">Wyoming</option>
+		</select>
+		<div id="csv-display">
+		</div>
+		<footer class="grid-container">
+	      <div id="item1">
+	        <h3 class="ftitle">Navigation</h3>
+	        <a href="#home" class="flink">Home</a>
+	        <a href="#presidential" class="flink">Presidential</a>
+	        <a href="#senate" class="flink">Senate</a>
+	        <a href="#register" class="flink">Register</a>  
+	      </div>
+	      <div id="item2"> 
+	        <h3 class="ftitle">Legal</h3>
+	        <a href="#tos" class="flink">Terms of Service</a>
+	        <a href="#privacy" class="flink">Privacy Policy</a>
+	      </div>
+	      <div id="item3">
+	        <h3 class="ftitle">Social Media</h3>
+	        <a href="#contact" class="flink">Contact Us</a>
+	        <a href="#insta" class="flink"><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram</a> 
+	      </div>
+	    </footer>
+	</body>
+</html>
